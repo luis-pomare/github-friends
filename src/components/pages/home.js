@@ -9,7 +9,6 @@ const { url, followers } = urlStore;
 const Home = () => {
   const friends = useSelector((state) => state.friends);
   const dispatch = useDispatch();
-  console.log(friends);
 
   useEffect(() => {
     if (friends.length === 0) {
@@ -17,16 +16,16 @@ const Home = () => {
         let response = await fetch(url + user + followers);
         response = await response.json();
         dispatch(getFriends(response));
-        console.log(friends);
       };
       call();
     }
-    console.log(friends);
   }, []);
 
   return (
     <main>
-      <Card />
+      {friends.map((friend) => (
+        <Card key={friend.id} name={friend.login} />
+      ))}
     </main>
   );
 };
