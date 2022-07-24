@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <header>
     <nav>
-      <Link to="/">USER</Link>
+      <Link to="/user">USER</Link>
     </nav>
     <input type="text" placeholder="Search by name" />
   </header>
