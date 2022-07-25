@@ -10,6 +10,10 @@ const Home = () => {
   const friends = useSelector((state) => state.friends);
   const dispatch = useDispatch();
 
+  function test() {
+    console.log(friends);
+  }
+
   useEffect(() => {
     if (friends.length === 0) {
       const call = async (user = 'luis-pomare') => {
@@ -23,6 +27,9 @@ const Home = () => {
 
   return (
     <main>
+      <button type="button" onClick={test}>
+        test
+      </button>
       {friends.map((friend) => (
         <Card key={friend.id} name={friend.login} />
       ))}
