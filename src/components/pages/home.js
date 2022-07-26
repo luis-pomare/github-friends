@@ -1,27 +1,25 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Card from '../card';
-import { getFriends } from '../../redux/reducers/friends';
-import urlStore from '../../redux/url';
-
-const { url, followers } = urlStore;
+import { getFollowers } from '../../redux/reducers/followers';
+import { getFollowings } from '../../redux/reducers/followings';
+import { getUser } from '../../redux/reducers/user';
 
 const Home = () => {
-  const friends = useSelector((state) => state.friends);
+  const state = useSelector((state) => state);
+  const { followers } = state;
+
   const dispatch = useDispatch();
 
   function test() {
-    console.log(friends);
+    console.log(state);
   }
 
   useEffect(() => {
-    if (friends.length === 0) {
-      const call = async (user = 'luis-pomare') => {
-        let response = await fetch(url + user + followers);
-        response = await response.json();
-        dispatch(getFriends(response));
-      };
-      call();
+    if (followers.length === 0) {
+      dispatch(getFollowers());
+      dispatch(getFollowings());
+      dispatch(getUser());
     }
   }, []);
 
@@ -30,8 +28,8 @@ const Home = () => {
       <button type="button" onClick={test}>
         test
       </button>
-      {friends.map((friend) => (
-        <Card key={friend.id} name={friend.login} />
+      {followers.map((follower) => (
+        <Card key={follower.id} name={follower.login} />
       ))}
     </main>
   );
