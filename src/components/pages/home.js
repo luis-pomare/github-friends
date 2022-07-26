@@ -11,10 +11,6 @@ const Home = () => {
 
   const dispatch = useDispatch();
 
-  function test() {
-    console.log(state);
-  }
-
   useEffect(() => {
     if (followers.length === 0) {
       dispatch(getFollowers());
@@ -25,9 +21,6 @@ const Home = () => {
 
   return (
     <main>
-      <button type="button" onClick={test}>
-        test
-      </button>
       {followers.map((follower) => (
         <Card key={follower.id} name={follower.login} />
       ))}

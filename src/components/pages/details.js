@@ -1,10 +1,14 @@
 import React from 'react';
-import Detail from '../detail';
+import { useSelector } from 'react-redux';
 
-const Details = () => (
-  <main>
-    <Detail />
-  </main>
-);
+const Details = () => {
+  const state = useSelector((state) => state);
+
+  return (
+    <main>
+      <h2>{state.friend.login}</h2>
+    </main>
+  );
+};
 
 export default Details;

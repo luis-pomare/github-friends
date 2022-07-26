@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { getAll } from '../redux/reducers/all';
+import { getFriend } from '../redux/reducers/friend';
 
 const Card = (props) => {
   const { name } = props;
@@ -16,7 +17,7 @@ const Card = (props) => {
   });
 
   function handleClick() {
-    console.log(name);
+    dispatch(getFriend(name));
   }
 
   return (
