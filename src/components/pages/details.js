@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
 const Details = () => {
   const { friend } = useSelector((state) => state);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <main>
