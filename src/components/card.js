@@ -8,14 +8,24 @@ const Card = (props) => {
   const { name } = props;
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
+
   useEffect(() => {
     if (state.all.length === 0) {
       dispatch(getAll(state));
     }
   });
+
+  function handleClick() {
+    console.log(name);
+  }
+
   return (
     <section>
-      <Link to="/details">logo</Link>
+      <Link to="/details">
+        <button type="button" onClick={handleClick}>
+          =
+        </button>
+      </Link>
       <img
         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
         alt="GitHub logo"
