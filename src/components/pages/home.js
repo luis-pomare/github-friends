@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Card from '../card';
 import { getFollowers } from '../../redux/reducers/followers';
 import { getFollowings } from '../../redux/reducers/followings';
+import { getUser } from '../../redux/reducers/user';
 
 const Home = () => {
   const state = useSelector((state) => state);
@@ -18,6 +19,7 @@ const Home = () => {
     if (followers.length === 0) {
       dispatch(getFollowers());
       dispatch(getFollowings());
+      dispatch(getUser());
     }
   }, []);
 
