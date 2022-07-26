@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { getAll } from '../redux/reducers/all';
 
 const Card = (props) => {
   const { name } = props;
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
+  useEffect(() => {
+    if (state.all.length === 0) {
+      dispatch(getAll(state));
+    }
+  });
   return (
     <section>
       <Link to="/details">logo</Link>
