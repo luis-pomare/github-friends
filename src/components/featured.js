@@ -1,12 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
-const Featured = () => (
-  <Link to="/details">
+const Featured = () => {
+  const { user } = useSelector((state) => state);
+
+  return (
     <section>
-      <h2>Featured</h2>
+      <h3>Current user</h3>
+      <img src={user.avatar_url} alt="avatar" width="100px" />
+      <h2>{user.login}</h2>
+      <p>
+        {user.followers}
+        {' '}
+        Followers
+      </p>
     </section>
-  </Link>
-);
+  );
+};
 
 export default Featured;
