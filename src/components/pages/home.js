@@ -4,6 +4,8 @@ import Card from '../card';
 import { getFollowers } from '../../redux/reducers/followers';
 import { getFollowings } from '../../redux/reducers/followings';
 import { getUser } from '../../redux/reducers/user';
+import Featured from '../featured';
+import Header from '../header';
 
 const Home = () => {
   const state = useSelector((state) => state);
@@ -20,11 +22,15 @@ const Home = () => {
   }, []);
 
   return (
-    <main>
-      {followers.map((follower) => (
-        <Card key={follower.id} name={follower.login} />
-      ))}
-    </main>
+    <>
+      <Header />
+      <Featured />
+      <main>
+        {followers.map((follower) => (
+          <Card key={follower.id} name={follower.login} />
+        ))}
+      </main>
+    </>
   );
 };
 
