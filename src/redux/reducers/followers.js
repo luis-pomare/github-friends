@@ -5,7 +5,7 @@ const { url, followersUrl } = storedUrl;
 
 export const getFollowers = createAsyncThunk(
   'followers/getFollowers',
-  async (user) => {
+  async (user = 'luis-pomare') => {
     let response = await fetch(url + user + followersUrl);
     response = await response.json();
     return response;
@@ -21,5 +21,4 @@ const followersSlice = createSlice({
   },
 });
 
-// export const { getFriends } = friendSlice.actions;
 export default followersSlice.reducer;

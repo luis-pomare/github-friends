@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Card from '../card';
 import { getFollowers } from '../../redux/reducers/followers';
+import { getFollowings } from '../../redux/reducers/followings';
 
 const Home = () => {
   const state = useSelector((state) => state);
@@ -15,7 +16,8 @@ const Home = () => {
 
   useEffect(() => {
     if (followers.length === 0) {
-      dispatch(getFollowers('KaskMIL'));
+      dispatch(getFollowers());
+      dispatch(getFollowings());
     }
   }, []);
 
