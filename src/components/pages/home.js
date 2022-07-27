@@ -4,16 +4,14 @@ import Card from '../card';
 import { getFollowers } from '../../redux/reducers/followers';
 import { getFollowings } from '../../redux/reducers/followings';
 import { getUser } from '../../redux/reducers/user';
+import Featured from '../featured';
+import Header from '../header';
 
 const Home = () => {
   const state = useSelector((state) => state);
   const { followers } = state;
 
   const dispatch = useDispatch();
-
-  function test() {
-    console.log(state);
-  }
 
   useEffect(() => {
     if (followers.length === 0) {
@@ -24,14 +22,15 @@ const Home = () => {
   }, []);
 
   return (
-    <main>
-      <button type="button" onClick={test}>
-        test
-      </button>
-      {followers.map((follower) => (
-        <Card key={follower.id} name={follower.login} />
-      ))}
-    </main>
+    <>
+      <Header caller="home" />
+      <Featured />
+      <main>
+        {followers.map((follower) => (
+          <Card key={follower.id} name={follower.login} />
+        ))}
+      </main>
+    </>
   );
 };
 
