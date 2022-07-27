@@ -9,9 +9,10 @@ const Card = (props) => {
   const { name } = props;
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
+  const { all, followers, followings } = state;
 
   useEffect(() => {
-    if (state.all.length === 0) {
+    if (all.length < followings.length || all.length < followers.length) {
       dispatch(getAll(state));
     }
   });
