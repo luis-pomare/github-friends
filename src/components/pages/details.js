@@ -9,6 +9,11 @@ const Details = () => {
     window.scrollTo(0, 0);
   });
 
+  let shortedDate = friend.created_at;
+  if (shortedDate) {
+    shortedDate = shortedDate.slice(0, 10);
+  }
+
   return (
     <>
       <Header caller="details" />
@@ -29,7 +34,7 @@ const Details = () => {
         </span>
         <span>
           <h3>Active since</h3>
-          <p>{friend.created_at.substring(0, 10)}</p>
+          <p>{shortedDate}</p>
         </span>
         <span>
           <h3>Public repositiries</h3>
