@@ -1,16 +1,23 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { setFilter } from '../redux/reducers/filter';
 
 const Featured = () => {
   const { followers, followings, all } = useSelector((state) => state);
+  const dispatch = useDispatch();
+
+  function handleChange(e) {
+    dispatch(setFilter(e.target.value));
+  }
+
   return (
-    <form>
+    <form onChange={handleChange}>
       <input
         type="radio"
         id="followers"
         name="conectionsFilter"
         value="followers"
-        checked
+        defaultChecked
       />
       <label htmlFor="followers">
         Followers
