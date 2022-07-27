@@ -10,7 +10,23 @@ import Filter from '../filter';
 
 const Home = () => {
   const state = useSelector((state) => state);
-  const { followers } = state;
+  const {
+    followers, followings, all, filter,
+  } = state;
+  let friends = followers;
+  switch (filter) {
+    case 'followers':
+      friends = followers;
+      break;
+    case 'following':
+      friends = followings;
+      break;
+    case 'all':
+      friends = all;
+      break;
+    default:
+      friends = followers;
+  }
 
   const dispatch = useDispatch();
 
@@ -28,8 +44,8 @@ const Home = () => {
       <Featured />
       <main>
         <Filter />
-        {followers.map((follower) => (
-          <Card key={follower.id} name={follower.login} />
+        {friends.map((friend) => (
+          <Card key={friend.id} name={friend.login} />
         ))}
       </main>
     </>
