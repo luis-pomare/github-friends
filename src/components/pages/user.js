@@ -15,9 +15,9 @@ const User = () => {
   };
 
   const submitHandler = () => {
-    dispatch(getFollowers('BregornOriginal'));
-    dispatch(getFollowings('BregornOriginal'));
-    dispatch(getUser('BregornOriginal'));
+    dispatch(getFollowers(state));
+    dispatch(getFollowings(state));
+    dispatch(getUser(state));
     dispatch(clearAll());
     setState('');
   };
