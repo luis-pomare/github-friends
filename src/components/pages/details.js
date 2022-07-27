@@ -11,7 +11,7 @@ const Details = () => {
 
   return (
     <>
-      <Header />
+      <Header caller="details" />
       <main>
         <span>
           <img src={friend.avatar_url} alt="Friends avatar" />

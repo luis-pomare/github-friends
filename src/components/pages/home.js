@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header caller="home" />
       <Featured />
       <main>
         {followers.map((follower) => (
