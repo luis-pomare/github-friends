@@ -29,7 +29,7 @@ const Details = () => {
         </span>
         <span>
           <h3>Active since</h3>
-          <p>{friend.created_at}</p>
+          <p>{friend.created_at.substring(0, 10)}</p>
         </span>
         <span>
           <h3>Public repositiries</h3>

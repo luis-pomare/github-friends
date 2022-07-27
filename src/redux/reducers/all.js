@@ -2,7 +2,10 @@ import { createSlice } from '@reduxjs/toolkit';
 
 function extractAll(state) {
   const { followings, followers } = state;
-  const conections = [...followers, ...followings];
+  let conections = [...followers, ...followings];
+  conections = conections.filter(
+    (value, index, self) => index === self.findIndex((t) => t.id === value.id),
+  );
   return conections;
 }
 
