@@ -4,6 +4,7 @@ import followings from './followings';
 import all from './all';
 import user from './user';
 import friend from './friend';
+import filter from './filter';
 
 const reducer = combineReducers({
   followers,
@@ -11,6 +12,7 @@ const reducer = combineReducers({
   all,
   user,
   friend,
+  filter,
 });
 
 export default reducer;
