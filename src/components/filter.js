@@ -14,7 +14,9 @@ const Featured = () => {
       />
       <label htmlFor="followers">
         Followers
+        {' ('}
         {followers.length}
+        )
       </label>
       <br />
       <input
@@ -25,13 +27,17 @@ const Featured = () => {
       />
       <label htmlFor="following">
         Following
+        {' ('}
         {followings.length}
+        )
       </label>
       <br />
       <input type="radio" id="all" name="conectionsFilter" value="all" />
       <label htmlFor="all">
         All conections
+        {' ('}
         {all.length}
+        )
       </label>
     </form>
   );
