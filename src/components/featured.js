@@ -6,12 +6,15 @@ const Featured = () => {
 
   return (
     <section>
-      <img src={user.avatar_url} alt='avatar' width='100px' />
+      <img src={user.avatar_url} alt="avatar" width="100px" />
       <h2>{user.login}</h2>
-      <p>{user.followers} Followers</p>
+      <p>
+        {user.followers}
+        {' '}
+        Followers
+      </p>
     </section>
   );
 };
 
 export default Featured;
-
