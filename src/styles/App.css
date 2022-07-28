@@ -1,7 +1,13 @@
 * {
   box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   text-align: center;
+}
+
+body {
+  background-color: #eb4b89;
 }

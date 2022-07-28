@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import '../styles/header.css';
 
 const HomeHeader = () => (
   <header>
     <nav>
       <i className="fa-solid fa-angle-left" />
-      <Link to="/user">USER</Link>
+      <Link to="/user" className="navLink">
+        USER
+      </Link>
     </nav>
-    <p>Your GitHub Profile</p>
+    <p>Current GitHub Profile</p>
   </header>
 );
 
@@ -16,7 +19,9 @@ const DetailsHeader = () => (
   <header>
     <nav>
       <i className="fa-solid fa-angle-left" />
-      <Link to="/">HOME</Link>
+      <Link to="/" className="navLink">
+        HOME
+      </Link>
     </nav>
     <p>Conection details</p>
   </header>
@@ -26,7 +31,9 @@ const UserHeader = () => (
   <header>
     <nav>
       <i className="fa-solid fa-angle-left" />
-      <Link to="/">HOME</Link>
+      <Link to="/" className="navLink">
+        HOME
+      </Link>
     </nav>
     <p>Change user</p>
   </header>
