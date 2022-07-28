@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilter } from '../redux/reducers/filter';
+import '../styles/filter.css';
 
 const Featured = () => {
   const { followers, followings, all } = useSelector((state) => state);
@@ -11,7 +12,7 @@ const Featured = () => {
   }
 
   return (
-    <form onChange={handleChange}>
+    <form id="filter" onChange={handleChange}>
       <input
         type="radio"
         id="followers"
@@ -41,7 +42,7 @@ const Featured = () => {
       <br />
       <input type="radio" id="all" name="conectionsFilter" value="all" />
       <label htmlFor="all">
-        All conections
+        All
         {' ('}
         {all.length}
         )
