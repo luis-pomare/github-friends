@@ -45,7 +45,7 @@ const Home = () => {
       <main>
         <Filter />
         {friends.map((friend) => (
-          <Card key={friend.id} name={friend.login} />
+          <Card key={friend.id} name={friend.login} id={friend.id} />
         ))}
       </main>
     </>

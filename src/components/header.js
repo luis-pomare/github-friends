@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 const HomeHeader = () => (
   <header>
     <nav>
+      <i className="fa-solid fa-angle-left" />
       <Link to="/user">USER</Link>
     </nav>
     <p>Your GitHub Profile</p>

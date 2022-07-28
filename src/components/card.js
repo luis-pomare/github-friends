@@ -6,7 +6,7 @@ import { getAll } from '../redux/reducers/all';
 import { getFriend } from '../redux/reducers/friend';
 
 const Card = (props) => {
-  const { name } = props;
+  const { name, id } = props;
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
   const { all, followers, followings } = state;
@@ -23,24 +23,28 @@ const Card = (props) => {
 
   return (
     <section>
-      <Link to="/details">
-        <button type="button" onClick={handleClick}>
-          =
-        </button>
-      </Link>
       <img
         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
         alt="GitHub logo"
         width="70px"
       />
+      <Link to="/details">
+        <button type="button" onClick={handleClick}>
+          <i className="fa-solid fa-circle-arrow-right" />
+        </button>
+      </Link>
       <h2>{name}</h2>
-      <p># followers</p>
+      <p>
+        User ID:
+        {id}
+      </p>
     </section>
   );
 };
 
 Card.propTypes = {
   name: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default Card;
