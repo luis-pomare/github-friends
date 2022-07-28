@@ -1,0 +1,25 @@
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.card {
+  width: 50%;
+  background-color: #d14279;
+  box-sizing: border-box;
+  padding: 7px;
+}
+
+#cardsContainer .card:nth-child(4n) {
+  background-color: #dd4680;
+}
+
+#cardsContainer .card:nth-child(4n + 1) {
+  background-color: #dd4680;
+}
+
+.logo {
+  opacity: 0.7;
+}

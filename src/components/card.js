@@ -22,11 +22,12 @@ const Card = (props) => {
   }
 
   return (
-    <section>
+    <section className="card dotedBackground">
       <img
         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
         alt="GitHub logo"
         width="70px"
+        className="logo"
       />
       <Link to="/details">
         <button type="button" onClick={handleClick}>
