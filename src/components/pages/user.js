@@ -18,7 +18,7 @@ const User = () => {
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
-    setState({ ...state, user: e.target.value });
+    setState({ errorClass: 'noVisible', user: e.target.value });
   };
 
   const { user, errorClass } = state;
@@ -37,6 +37,8 @@ const User = () => {
       response = await response.json();
       if (response.id) {
         changeUser();
+      } else {
+        setState({ ...state, errorClass: 'visible' });
       }
     };
     call();
