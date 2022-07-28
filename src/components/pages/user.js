@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getFollowers } from '../../redux/reducers/followers';
 import { getFollowings } from '../../redux/reducers/followings';
@@ -7,6 +6,7 @@ import { getUser } from '../../redux/reducers/user';
 import { clearAll } from '../../redux/reducers/all';
 import storedUrl from '../../redux/url';
 import '../../styles/user.css';
+import Header from '../header';
 
 const { url } = storedUrl;
 
@@ -46,7 +46,7 @@ const User = () => {
 
   return (
     <>
-      <Link to="/">back</Link>
+      <Header caller="user" />
       <h2>Please enter a valid GitHub user name:</h2>
       <input
         type="text"
