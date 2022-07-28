@@ -2,6 +2,7 @@
   box-sizing: content-box;
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
 .App {
@@ -10,4 +11,10 @@
 
 body {
   background-color: #eb4b89;
+}
+
+.dotedBackground {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05), 1px, transparent 0);
+  background-size: 5px 5px;
+  background-position: -19px -19px;
 }

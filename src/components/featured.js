@@ -1,18 +1,21 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import '../styles/featured.css';
 
 const Featured = () => {
   const { user } = useSelector((state) => state);
 
   return (
-    <section>
+    <section id="featured" className="dotedBackground">
       <img src={user.avatar_url} alt="avatar" width="100px" />
-      <h2>{user.login}</h2>
-      <p>
-        {user.followers}
-        {' '}
-        Followers
-      </p>
+      <span id="titleContainer">
+        <h2>{user.login}</h2>
+        <p>
+          {user.followers}
+          {' '}
+          Followers
+        </p>
+      </span>
     </section>
   );
 };
