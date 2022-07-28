@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { getAll } from '../redux/reducers/all';
 import { getFriend } from '../redux/reducers/friend';
+import '../styles/card.css';
 
 const Card = (props) => {
   const { name, id } = props;
@@ -23,22 +24,26 @@ const Card = (props) => {
 
   return (
     <section className="card dotedBackground">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-        alt="GitHub logo"
-        width="70px"
-        className="logo"
-      />
-      <Link to="/details">
-        <button type="button" onClick={handleClick}>
-          <i className="fa-solid fa-circle-arrow-right" />
-        </button>
-      </Link>
-      <h2>{name}</h2>
-      <p>
-        User ID:
-        {id}
-      </p>
+      <span className="links">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+          alt="GitHub logo"
+          width="70px"
+          className="logo"
+        />
+        <Link to="/details">
+          <button type="button" onClick={handleClick}>
+            <i className="fa-solid fa-circle-arrow-right" />
+          </button>
+        </Link>
+      </span>
+      <span className="info">
+        <h2>{name}</h2>
+        <p>
+          User ID:
+          {id}
+        </p>
+      </span>
     </section>
   );
 };
