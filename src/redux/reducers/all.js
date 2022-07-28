@@ -16,8 +16,11 @@ const allSlice = createSlice({
     getAll(state, { payload }) {
       return extractAll(payload);
     },
+    clearAll() {
+      return [];
+    },
   },
 });
 
-export const { getAll } = allSlice.actions;
+export const { getAll, clearAll } = allSlice.actions;
 export default allSlice.reducer;
