@@ -1,0 +1,14 @@
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+#cardsContainer .card:nth-child(4n) {
+  background-color: #dd4680;
+}
+
+#cardsContainer .card:nth-child(4n + 1) {
+  background-color: #dd4680;
+}

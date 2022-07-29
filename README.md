@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GitHub Friends
 
-## Available Scripts
+> This mobile-first app is based on the API of the best social media website in the world. You can explore your connections (organized by categories) and obtain extra information about each one of them on the details page.
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- HTML and CSS
+- JavaScript
+- React
+- React router
+- Redux
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Live Demo Link](https://62e3731b23a21944d84a9b39--storied-crepe-b941b1.netlify.app/)
 
-### `npm test`
+## App screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Original design
 
-### `npm run build`
+[<img src="./images\design.png">](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29)
+Original design by: [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Final result
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[<img src="./images\result.png">](https://62e3731b23a21944d84a9b39--storied-crepe-b941b1.netlify.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To run this repo in your local machine, you must clone it in your terminal (Or git bash) by using the command **`git clone`** plus the \*SSh key\*\*\* that is in the code tag above. Once you have it on your local machine you must run the `npm start` command to open the the local server.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Authors
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+👤 **Luis pomare**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- GitHub: [luis-pomare](https://github.com/luis-pomare)
+- Twitter: [@LuisPomare1](https://twitter.com/LuisPomare1)
+- LinkedIn: [luis-pomare](https://www.linkedin.com/in/luis-pomare/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Show your support
 
-## Learn More
+Give a ⭐️ if you like this project!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgments
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The credit for this beautiful design goes to:
 
-### Code Splitting
+👤 **Nelson Sakwa**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Original design: [Nelson Sakwa](https://github.com/luis-pomare)
+- Twitter: [Nelson Sakwa](http://twitter.com/nelsonbreeza)
+- LinkedIn: [Nelson Sakwa](http://linkedin.com/pub/nelson-sakwa/35/814/735)
 
-### Analyzing the Bundle Size
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

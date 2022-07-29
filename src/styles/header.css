@@ -1,0 +1,12 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 2.6fr 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 5px;
+}
+
+.navLink {
+  font-weight: bold;
+  margin-left: 7px;
+}

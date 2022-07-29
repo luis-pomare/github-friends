@@ -1,0 +1,10 @@
+.featured {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  gap: 5%;
+  width: 100%;
+  background-color: #ff5294;
+}
