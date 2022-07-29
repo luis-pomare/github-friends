@@ -12,16 +12,20 @@
 - React router
 - Redux
 
+## Live Demo
+
+[Live Demo Link](https://62e3731b23a21944d84a9b39--storied-crepe-b941b1.netlify.app/)
+
 ## App screenshots
 
 ### Original design
 
-[<img src="./images\design.png">](Design)
-Original design: [Nelson Sakwa](https://github.com/luis-pomare)
+[<img src="./images\design.png">](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29)
+Original design by: [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 
 ### Final result
 
-[<img src="./images\result.png">](Result)
+[<img src="./images\result.png">](https://62e3731b23a21944d84a9b39--storied-crepe-b941b1.netlify.app/)
 
 ## Getting Started
 
@@ -31,7 +35,7 @@ To run this repo in your local machine, you must clone it in your terminal (Or g
 
 👤 **Luis pomare**
 
-- GitHub: [Nelson Sakwa](https://github.com/luis-pomare)
+- GitHub: [luis-pomare](https://github.com/luis-pomare)
 - Twitter: [@LuisPomare1](https://twitter.com/LuisPomare1)
 - LinkedIn: [luis-pomare](https://www.linkedin.com/in/luis-pomare/)
 
