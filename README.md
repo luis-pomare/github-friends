@@ -12,15 +12,16 @@
 - React router
 - Redux
 
-## App screenshot
+## App screenshots
 
-### Desktop
+### Original design
 
-[<img src="app_screenshot.png">](Coming soon!)
+[<img src="./images\design.png">](Design)
+Original design: [Nelson Sakwa](https://github.com/luis-pomare)
 
-### Mobile
+### Final result
 
-[<img src="app_screenshot_mobile.png">](Coming soon!)
+[<img src="./images\result.png">](Result)
 
 ## Getting Started
 
