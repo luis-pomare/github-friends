@@ -5,39 +5,39 @@ import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
 
-import Home from '../components/pages/home';
+import User from '../components/pages/user';
 
-describe('Home components mounted', () => {
-  test('Featured component mounted', () => {
+describe('Select user components mounted', () => {
+  test('User title components mounted', () => {
     render(
       <Provider store={store}>
         <BrowserRouter>
-          <Home />
+          <User />
         </BrowserRouter>
       </Provider>,
     );
-    expect(document.getElementById('titleContainer')).toBeInTheDocument();
+    expect(document.getElementById('userTitle')).toBeInTheDocument();
   });
 
-  test('Filter component mounted', () => {
+  test('User input components mounted', () => {
     render(
       <Provider store={store}>
         <BrowserRouter>
-          <Home />
+          <User />
         </BrowserRouter>
       </Provider>,
     );
-    expect(document.getElementById('filter')).toBeInTheDocument();
+    expect(document.getElementById('userInput')).toBeInTheDocument();
   });
 
-  test('Cards components mounted', () => {
+  test('User button components mounted', () => {
     render(
       <Provider store={store}>
         <BrowserRouter>
-          <Home />
+          <User />
         </BrowserRouter>
       </Provider>,
     );
-    expect(document.getElementById('cardsContainer')).toBeInTheDocument();
+    expect(document.getElementById('submitUser')).toBeInTheDocument();
   });
 });

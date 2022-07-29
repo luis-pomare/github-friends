@@ -9,8 +9,8 @@ describe('Header conditional tests', () => {
   test('Home header displayed', () => {
     render(
       <BrowserRouter>
-        <Header caller='home' />
-      </BrowserRouter>
+        <Header caller="home" />
+      </BrowserRouter>,
     );
     expect(document.querySelector('header')).toBeInTheDocument();
   });
@@ -18,8 +18,8 @@ describe('Header conditional tests', () => {
   test('Details header displayed', () => {
     render(
       <BrowserRouter>
-        <Header caller='details' />
-      </BrowserRouter>
+        <Header caller="details" />
+      </BrowserRouter>,
     );
     expect(document.querySelector('header')).toBeInTheDocument();
   });
@@ -27,8 +27,8 @@ describe('Header conditional tests', () => {
   test('User header displayed', () => {
     render(
       <BrowserRouter>
-        <Header caller='user' />
-      </BrowserRouter>
+        <Header caller="user" />
+      </BrowserRouter>,
     );
     expect(document.querySelector('header')).toBeInTheDocument();
   });
