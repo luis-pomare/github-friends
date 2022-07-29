@@ -30,7 +30,7 @@ To run this repo in your local machine, you must clone it in your terminal (Or g
 
 👤 **Luis pomare**
 
-- GitHub: [@luis-pomare](https://github.com/luis-pomare)
+- GitHub: [Nelson Sakwa](https://github.com/luis-pomare)
 - Twitter: [@LuisPomare1](https://twitter.com/LuisPomare1)
 - LinkedIn: [luis-pomare](https://www.linkedin.com/in/luis-pomare/)
 
@@ -38,7 +38,16 @@ To run this repo in your local machine, you must clone it in your terminal (Or g
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgments
+
+The credit for this beautiful design goes to:
+
+👤 **Nelson Sakwa**
+
+- Original design: [Nelson Sakwa](https://github.com/luis-pomare)
+- Twitter: [Nelson Sakwa](http://twitter.com/nelsonbreeza)
+- LinkedIn: [Nelson Sakwa](http://linkedin.com/pub/nelson-sakwa/35/814/735)
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-
