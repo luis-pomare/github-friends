@@ -6,7 +6,7 @@ const Featured = () => {
   const { user } = useSelector((state) => state);
 
   return (
-    <section id="featured" className="dotedBackground">
+    <section className="dotedBackground featured">
       <img src={user.avatar_url} alt="avatar" width="100px" />
       <span id="titleContainer">
         <h2>{user.login}</h2>

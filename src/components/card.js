@@ -21,7 +21,7 @@ const Card = (props) => {
   function handleClick() {
     dispatch(getFriend(name));
   }
-
+  const printId = ` ${id}`;
   return (
     <section className="card dotedBackground">
       <span className="links">
@@ -41,7 +41,7 @@ const Card = (props) => {
         <h2>{name}</h2>
         <p>
           User ID:
-          {id}
+          {printId}
         </p>
       </span>
     </section>

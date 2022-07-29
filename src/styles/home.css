@@ -4,6 +4,7 @@
   width: 100%;
   font-size: 0.8rem;
 }
+
 #cardsContainer .card:nth-child(4n) {
   background-color: #dd4680;
 }

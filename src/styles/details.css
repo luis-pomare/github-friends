@@ -1,0 +1,27 @@
+.detailImage {
+  width: 100px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: left;
+  margin-left: 15px;
+}
+
+#infoContainer {
+  width: 100%;
+}
+
+.detailCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 10px;
+}
+
+#infoContainer .detailCard:nth-child(odd) {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05), 1px, transparent 0);
+  background-size: 5px 5px;
+  background-position: -19px -19px;
+  background-color: #ff5294;
+}

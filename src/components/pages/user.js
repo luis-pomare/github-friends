@@ -47,12 +47,13 @@ const User = () => {
   return (
     <>
       <Header caller="user" />
-      <h2>Please enter a valid GitHub user name:</h2>
+      <h2 id="userTitle">Please enter a valid GitHub user name:</h2>
       <input
         type="text"
         value={user}
         onChange={handleChange}
         name="userInput"
+        id="userInput"
         placeholder="GitHub Login"
       />
       <button type="button" id="submitUser" onClick={submitHandler}>
