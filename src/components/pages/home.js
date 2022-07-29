@@ -7,6 +7,7 @@ import { getUser } from '../../redux/reducers/user';
 import Featured from '../featured';
 import Header from '../header';
 import Filter from '../filter';
+import '../../styles/home.css';
 
 const Home = () => {
   const state = useSelector((state) => state);
@@ -42,8 +43,8 @@ const Home = () => {
     <>
       <Header caller="home" />
       <Featured />
-      <main>
-        <Filter />
+      <Filter />
+      <main id="cardsContainer">
         {friends.map((friend) => (
           <Card key={friend.id} name={friend.login} id={friend.id} />
         ))}

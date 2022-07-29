@@ -1,0 +1,13 @@
+#filter {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.category {
+  display: flex;
+  gap: 3px;
+}
