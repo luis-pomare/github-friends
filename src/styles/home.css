@@ -12,3 +12,10 @@
 #cardsContainer .card:nth-child(4n + 1) {
   background-color: #dd4680;
 }
+
+@media screen and (min-width: 720px) {
+  #cardsContainer {
+    box-sizing: border-box;
+    padding: 30px;
+  }
+}

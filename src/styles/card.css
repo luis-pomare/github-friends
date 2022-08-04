@@ -36,3 +36,19 @@ button {
 h2 {
   padding-top: 15px;
 }
+
+@media screen and (min-width: 870px) {
+  .card {
+    width: 25%;
+    height: 180px;
+    border: 1px solid black;
+  }
+
+  .links {
+    justify-content: space-around;
+  }
+
+  .info {
+    align-items: center;
+  }
+}
