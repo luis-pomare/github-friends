@@ -39,9 +39,8 @@ h2 {
 
 @media screen and (min-width: 870px) {
   .card {
-    width: 25%;
+    width: 24.7%;
     height: 180px;
-    border: 1px solid black;
   }
 
   .links {
