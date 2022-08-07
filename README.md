@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://62e3731b23a21944d84a9b39--storied-crepe-b941b1.netlify.app/)
+[Live Demo Link](https://development--storied-crepe-b941b1.netlify.app/)
 
 ## App screenshots
 
@@ -25,7 +25,7 @@ Original design by: [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 
 ### Final result
 
-[<img src="./images\result.png">](https://62e3731b23a21944d84a9b39--storied-crepe-b941b1.netlify.app/)
+[<img src="./images\result.png">](https://development--storied-crepe-b941b1.netlify.app/)
 
 ## Getting Started
 
